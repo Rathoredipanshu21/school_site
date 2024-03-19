@@ -1,0 +1,61 @@
+.facilities {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facility {
+    text-align: center;
+    width: 20%;
+    padding: 20px;
+}
+
+.circle-number {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(57, 16, 222);
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 100px;
+    box-shadow: 2px 2px 4px rgba(94, 89, 89, 0.2);
+
+}
+
+.facility:nth-child(1) .circle-number {
+    background-color: red;
+}
+
+.facility:nth-child(2) .circle-number {
+    background-color: green;
+}
+
+.facility:nth-child(3) .circle-number {
+    background-color: orange;
+}
+
+.facility:nth-child(4) .circle-number {
+    background-color: blue;
+}
+
+
+
+/* for phone */
+@media only screen and (max-width: 600px) {
+   
+    .circle-number {
+        width: 60px; 
+        height: 60px;
+        font-size: 15px; 
+        line-height: 60px; 
+    }
+    .facilities{
+        width: 90%;
+        margin: 2px auto;
+    }
+}
+
+/* for tab*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+ 
+}

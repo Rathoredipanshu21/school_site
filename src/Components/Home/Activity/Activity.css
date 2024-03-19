@@ -1,0 +1,122 @@
+.activities-main {
+  display: flex;
+  justify-content: space-around;
+  width: 72%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2px auto;
+}
+
+
+.second-box-main {
+  display: flex;
+  justify-content: space-around;
+  width: 72%;
+  margin: 2px auto;
+  gap: 10px;
+}
+
+.box,
+.second_box {
+  border: 2px solid #000;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  border-radius: 15px;
+  
+}
+
+.box img,
+.second_box img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+
+.box:hover img {
+  transform: scale(0);
+}
+
+.second_box:hover img {
+  transform: scale(0);
+}
+
+.box .content {
+  background-color: rgba(17, 5, 235, 0.318);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  transform: scale(0) rotate(-180deg);
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.box:hover .content {
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.2s;
+  opacity: 1;
+}
+
+.second_box .content {
+  background-color: rgba(17, 5, 235, 0.318);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.second_box:hover .content {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.second_box {
+  margin: 10px auto;
+  width: 50%;
+}
+
+.second_box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media query for smaller screens like phones */
+@media only screen and (max-width: 600px) {
+  
+  .second-box-main {
+    flex-direction: column; 
+    align-items: center; 
+    width: 90%; 
+  }
+
+  .activities-main{
+    flex-direction: column; 
+    align-items: center; 
+    width: 90%; 
+  }
+
+ 
+
+  .box,
+  .second_box {
+    width: 90%; 
+    margin-bottom: 20px; 
+  }
+}

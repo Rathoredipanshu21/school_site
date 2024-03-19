@@ -1,0 +1,100 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-item {
+    margin-bottom: 20px;
+  }
+  
+  .info-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-item p {
+    color: #555;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form button {
+    background-color: #4d93da;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #2f72b3;
+  }
+  
+  /* Media Query for Phone Screens */
+  @media screen and (max-width: 600px) {
+    .contact-page {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info,
+    .contact-form {
+      margin: 20px 0;
+    }
+  
+    .info {
+      align-items: center;
+    }
+  
+    .contact-form form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+    }
+  }
+  

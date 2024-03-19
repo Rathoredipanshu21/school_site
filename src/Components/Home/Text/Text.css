@@ -1,0 +1,30 @@
+.choose-us-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px; 
+  width: 80%;
+  margin: 2px auto;
+}
+
+.choose-us-item {
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: .8;
+}
+
+.choose-us-item h2 {
+  margin-bottom: 10px; 
+}
+
+.choose-us-item p {
+  margin-bottom: 0; 
+}
+
+/* Media query for phone screens */
+@media only screen and (max-width: 600px) {
+  .choose-us-container {
+    grid-template-columns: 1fr; /* Change to single column layout */
+  }
+}

@@ -1,0 +1,35 @@
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.infrastructure-list {
+  width: 30%;
+  height: 100vh;
+}
+
+.item {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+}
+
+.image-container {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  width: calc(25% - 10px); /* 25% width with 10px gap between images */
+  margin-right: 10px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Maintain aspect ratio */
+}

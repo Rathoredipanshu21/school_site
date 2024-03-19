@@ -1,0 +1,33 @@
+.boxContainer {
+    width: 200px;
+    height: 177px;
+    margin: 15px;
+    border: 1px solid #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .boxContainer img {
+    transition: transform 1s ease-in-out;
+    border-radius: 12px;
+  }
+  
+  .boxContainer img:hover {
+    transform: scale(1.5);
+  }
+  
+  .list li {
+    color: #fff;
+  }
+  
+  .row{
+    width: 60%;
+    margin: 2px auto;
+  }

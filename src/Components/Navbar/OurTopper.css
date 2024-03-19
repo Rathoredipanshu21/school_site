@@ -1,0 +1,37 @@
+.our-topper {
+    text-align: center;
+}
+
+.our-topper h1 {
+    margin-bottom: 20px;
+}
+
+.topper-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topper-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.topper-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.topper-info {
+    margin-top: 10px;
+}
+
+.topper-info h2 {
+    margin-bottom: 5px;
+}
+
+.topper-info p {
+    margin: 5px 0;
+}

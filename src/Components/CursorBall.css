@@ -1,0 +1,34 @@
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999; 
+}
+
+.cursor-transparent {
+    background-color: transparent;
+    border: 2px solid #00f; /* Blue border */
+}
+
+.cursor-red {
+    background-color: red;
+    border: 2px solid #fff; /* White border */
+}
+
+
+
+/* for phone */
+@media only screen and (max-width: 600px) {
+    .cursor{
+        display: none;
+    }
+  }
+  
+  /* for tab*/
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .cursor{
+            display:none;
+    }
+  }
